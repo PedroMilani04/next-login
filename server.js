@@ -17,9 +17,18 @@ app.use(cors());
 
 //quando um método POST para /api for chamado, isso acontecerá 
 app.post('/api', async (req, res) => {
-    console.log('Called');
+    const result = await dbOperation.getEmployees(req.body.email, req.body.password);
 
-})
+    if (result === 1) {
+        console.log("Logged!");
+        console.log(result);
+        res.status(200).send('1'); // Return the string '1'
+    } else {
+        console.log("Access Denied");
+        console.log(result);
+        res.status(401).send('0'); // Return the string '0'
+    }
+});
 
 app.post('/quit', async (req, res) => {
     await dbOperation.createEmployee(req.body)

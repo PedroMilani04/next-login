@@ -14,7 +14,6 @@ export default function Home() {
   const login = () => {
     console.log(email); //teste
     console.log(password); //teste
-    router.push('/logged') // ainda teste
   }
 
   //TESTE BD
@@ -25,7 +24,16 @@ export default function Home() {
         'Content-Type': 'application/json',
         Accept: 'application/json',
       },
-    }).then((res) => res.json());
+      body: JSON.stringify({
+        email: email,
+        password: password
+      })
+    }).then((res) => res.text());
+    if(newData === '1') {
+      router.push('/logged') // ainda teste
+    } else {
+      window.alert('Login ou senha inválidos.')
+    }
     console.log(newData);
   };
   
