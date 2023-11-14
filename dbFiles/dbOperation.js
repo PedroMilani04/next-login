@@ -19,10 +19,10 @@ const getEmployees = async(email, password) => { // função getEmployees recebe
         console.log(error); // erro, caso aconteça
     }
 }
-const   createEmployee = async(Employee) => {
+const   createEmployee = async(email, password) => {
     try {
         let pool = await sql.connect(config);
-        let employees = await pool.request().query(`INSERT INTO EmployeeDemographics VALUES (${Employee.EmployeeID}, '${Employee.Firstname}', '${Employee.Lastname}', ${Employee.Age}, '${Employee.Gender}' )`)
+        let employees = await pool.request().query(`INSERT INTO Users VALUES ('${email}', '${password}')`)
         console.log(employees);
         return employees;
     }

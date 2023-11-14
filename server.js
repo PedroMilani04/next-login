@@ -31,11 +31,9 @@ app.post('/api', async (req, res) => {
 });
 
 app.post('/quit', async (req, res) => {
-    await dbOperation.createEmployee(req.body)
-    const result = await dbOperation.getEmployees(req.body.Firstname);
+    await dbOperation.createEmployee(req.body.email, req.body.password)
 
     console.log('Called quit');
-    res.send(result.recordset)
 })
 
 
