@@ -111,7 +111,7 @@ export default function Home() {
 >
                 <h2 className='font-thin text-2xl md:text-3xl text-left mb-4'>{isRegister ? 'Register' : 'Login'}</h2>
 
-                <div className='flex flex-col space-y-2'  data-aos="fade-left"   >
+                <div className='flex flex-col space-y-2'  data-aos="fade-left"  data-aos-duration="2000" >
                   <input
                     onChange={(e) => setEmail(e.target.value)}
                     value={email}
@@ -120,8 +120,9 @@ export default function Home() {
                     className='bg-transparent border-transparent border-b-blue-100 focus:border-b-rose-300 hover:border-b-rose-300  border rounded p-2 text-gray-700 focus:outline-none transition duration-300 ease-linear'
                   />
                 </div>
-                <div className='flex flex-col space-y-2' data-aos="fade-left"  >
+                <div className='flex flex-col space-y-2' data-aos="fade-left" data-aos-duration="2000" >
                   <input
+                  
                     onChange={(e) => setPassword(e.target.value)}
                     value={password}
                     placeholder="Password"
@@ -129,7 +130,7 @@ export default function Home() {
                     className='bg-transparent border-transparent border-b-blue-100 focus:border-b-sky-300 hover:border-b-sky-300 border rounded p-2 text-gray-700 focus:outline-none transition duration-300 ease-linear'
                   />
                 </div>
-                <div className='flex mr-12 w-full' data-aos="zoom-in">
+                <div className='flex mr-12 w-full' data-aos="zoom-in" data-aos-duration="1800">
                   <button
                     type='button'
                     
@@ -186,6 +187,7 @@ export default function Home() {
               
             }}
             data-aos="flip-left"
+            data-aos-duration="2000"
           >        {/* Content for the right column */}
           </div>
         </div>
