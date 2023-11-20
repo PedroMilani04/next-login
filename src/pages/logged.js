@@ -2,10 +2,10 @@ export default function Logged() {
     return (
         <div className="min-h-screen flex flex-col text-gray-600 font-light text-2xl justify-center items-center p-8" style={{ backgroundImage: 'url(/images/4877010.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <div className="mt-10 mb-10 flex flex-col justify-center items-center " >
-                <h1 className="text-8xl h-32 mb-4 bg-gradient-to-r from-blue-600 via-rose-400 to-pink-600 text-transparent bg-clip-text" data-aos="fade-left" data-aos-duration="2000" style={{ background: 'linear-gradient(to right, #3490dc, #fuchsia)' }}>You're logged in!</h1>
-                <h2 className="text-3xl mb-2 font-bold" data-aos="fade-right" data-aos-duration="2800">What does this mean?</h2>
+                <h1 className="text-5xl md:text-8xl h-32 md:mb-4 bg-gradient-to-r from-blue-600 via-rose-400 to-pink-600 text-transparent bg-clip-text" data-aos="fade-left" data-aos-duration="2000" style={{ background: 'linear-gradient(to right, #3490dc, #fuchsia)' }}>You're logged in!</h1>
+                <h2 className="text-2xl  md:text-3xl mb-2 font-bold" data-aos="fade-right" data-aos-duration="2800">What does this mean?</h2>
             </div>
-            <div className="w-1/2 bg-white rounded-xl p-20 mt-10 mb-10 text-center text-gray-500 " data-aos="flip-right">
+            <div className="w-5/6  lg:w-1/2 bg-white rounded-xl p-4 md:p-20 mt-10 mb-10 text-center text-gray-500 " data-aos="flip-right">
                 <p className="mb-4">
                     Congratulations! You've successfully logged into your account. The information you provided on the login page has been sent to the SQL Server, verified, and returned!
                 </p>
