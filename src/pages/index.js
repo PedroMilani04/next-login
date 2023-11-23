@@ -38,7 +38,7 @@ export default function Home() {
       // Handle register form submission
       console.log('Registering:', email, password);
       toggleForm()
-      const newData = await fetch('http://localhost:5000/quit', {
+      const newData = await fetch('https://helpme123-e9fba62d59d0.herokuapp.com/quit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -54,7 +54,7 @@ export default function Home() {
 
     } else {
       // Handle login form submission
-      const newData = await fetch('http://localhost:5000/api', {
+      const newData = await fetch('https://helpme123-e9fba62d59d0.herokuapp.com/api', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
