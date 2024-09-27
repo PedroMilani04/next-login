@@ -1,4 +1,11 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Login Page - Fullstack App
+
+This project is a **fullstack** login page built with **Next.js**, featuring a user authentication system that integrates with an **SQL database**. The front end is styled using **Tailwind CSS** for a clean, responsive design.
+
+## Features
+- **User Authentication**: Full login and registration functionality.
+- **SQL Database Integration**: Stores and retrieves user data securely.
+- **Tailwind CSS**: Responsive and modern UI with utility-first CSS.
 
 ## Getting Started
 
